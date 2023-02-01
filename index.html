@@ -1,0 +1,240 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <title>My Portfolio</title>
+            <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+            <link rel="stylesheet" type="text/css" href="styles/width401768.css" />
+            <link rel="stylesheet" type="text/css" href="styles/widthmax320.css" />
+            <link rel="stylesheet" type="text/css" href="styles/width320400.css" />
+            <link rel = "icon" href = "images/biller-design.png" type = "image/x-icon">
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            
+            <!-- FontAwesome icons -->
+            <script src="https://kit.fontawesome.com/47a967d46c.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <div id="index"></div> <!-- anchor gia to redirect -->
+            <div class="navbar glass-effect">
+                <img class="logo-nav" src="images/biller-design.png" />
+                <br />
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="icons fa-solid fa-house" href="#index"></a>
+                        <a class="navmenu" href="#index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="icons fa-solid fa-address-card" href="#about"></a>
+                        <a class="navmenu" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="icons fa-regular fa-file-image" href="#portfolio"></a>
+                        <a class="navmenu" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="icons fa-solid fa-file-pen" href="#contact"></a>
+                        <a class="navmenu" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="blocking"></div>
+            <div class="red-info">The website is NOT full responsive yet.</div>
+
+
+            <div id="about"></div><br><br> <!-- anchor gia to redirect -->
+            <section class="container-about border-box">
+                <div class="img-about">
+                    <img src="images/profile-photo.png" class="fix bd" />
+                </div>
+                <div class="text">
+                    <h3>Greetings!</h3>
+                    <p>
+                        My name is Vasilis, I am 26 years old from Greece. My passion is CSS. I like Front-End Developing and I am a self-taught Graphic Designer.
+                    </p>
+                    <p>Welcome to my Portfolio!</p>
+                    <button type="button" class="read_more-btn" onClick="openSideBar(), window.location.href='#index';">Read More</button>
+                </div>
+                    
+                
+            </section>
+
+            <!-- ABOUT sidebar / custom CV open -->
+            <div id="mysidebar" class="sidebar">
+                <a href="javascript:void(0)" id="close-read_more-btn" class="close-read_more-btn" onclick="closeSideBar()">&times;</a>
+                <section class="container-portfolio sidebar-box">
+                    <div class="cv-text">
+                        <h3 class="cv-title">About me</h3>
+                        <div class="mini-box certs">
+                            <p>Certifications: </p>
+                            <ul class="cv-text cv-xartia">
+                                <li>IEK Certification on Software Engineer</li>
+                                <li>FreeCodeCamp Certification on Responsive Web Design</li>
+                            </ul>
+                        </div>
+                        <div class="mini-box softskills">
+                            <p>Soft Skills: </p>
+                            <ul class="cv-text cv-softskills">
+                                <li>Fast learner</li>
+                                <li>Problem-solving ability</li>
+                                <li>Teamwork</li>
+                                <li>Attention to detail</li>
+                                <li>Passion for Front-End Developing</li>
+                                <li>Patience</li>
+                            </ul>
+                        </div>
+                        <div class="mini-box skills">
+                            <p>Skills: </p>
+                            <ul class="cv-text cv-skills">
+                                <li>HTML</li> <span class="progress-bar htmlbar">90%</span>
+                                <li>CSS</li> <span class="progress-bar cssbar">75%</span>
+                                <li>JavaScript</li> <span class="progress-bar jsbar">30%</span>
+                            </ul>
+                            <br>
+                            <p>Extra Skills: </p>
+                            <ul class="cv-text cv-skills-extra">
+                                <li>Photoshop</li> <span class="progress-bar psbar">80%</span>
+                                <li>Vegas Pro</li> <span class="progress-bar vpbar">70%</span>
+                                <li>Premiere</li> <span class="progress-bar prebar">60%</span>
+                                <li>After Effects</li> <span class="progress-bar aebar">40%</span>
+                            </ul>
+                        </div>
+                        <div class="mini-box exp">
+                            <p>Experiance: </p>
+                            <ul class="cv-text cv-exp">
+                                <li>Internship as an IT in a Hospital</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="portfolio"></div><br><br> <!-- anchor gia to redirect -->
+            <section class="container-portfolio border-box-portfolio">
+                <div class="tab1 tabs">
+                    <h3 class="titles">Projects</h3>
+                    <p class="descriptions">Projects that I have made.</p><br>
+                    <button class="btn btn1" onClick="window.location.href='#projects';">Check them out!</button>
+                </div>
+                <div class="tab2 tabs">
+                    <h3 class="titles">Photography & Editing</h3>
+                    <p class="descriptions">Photographs before and after editing.</p><br>
+                    <button class="btn btn2" onClick="window.location.href='#photography';">Explore them!</button>
+                </div>
+                <div class="tab3 tabs">
+                    <h3 class="titles">Graphics</h3>
+                    <p class="descriptions">Some of my creations such as logos and other designs.</p>
+                    <button class="btn btn3" onClick="window.location.href='#graphics';">Check them too!</button>
+                </div>
+            </section>
+            
+            <div id="projects"></div><br><br> <!-- anchor gia to redirect -->
+            <section class="container-portfolio border-box-portfolio-mini projects-box">
+                <div id="redirectNewTab" class="pj" onclick="window.open('https://userstyles.org/styles/184330/dark-orange-by-biller', '_blank');">
+                    <h2 class="titles2">Custom CSS theme</h2>
+                    <img class="doby" src="images/DarkOrangebyBiller.png">
+                    <p class="descriptions">This is a custom CSS theme for youtube, that you can use with the "Stylish" extension.</p>
+                </div>
+
+            </section>
+
+            <div id="photography"></div><br><br> <!-- anchor gia to redirect -->
+            <section class="container-portfolio border-box-portfolio-low">
+                <div class="comp img-space">
+                    <img class="comp-imgs" src="images/comparison/[original]leaf_under_dirt.jpg" />
+                    <img id="my-img" class="comp-imgs" src="images/comparison/[edit]leaf_under_dirt.jpg" />
+                    <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+                </div>
+                <div class="comp img-space">
+                    <img class="comp-imgs" src="images/comparison/perfect sunset.jpg" />
+                    <img id="my-img2" class="comp-imgs" src="images/comparison/Orange_Sunset.jpg" />
+                    <input type="range" min="0" max="100" value="50" id="slider2" oninput="slide2()">
+                </div>
+            </section>
+
+            <section class="container-portfolio border-box-portfolio-low no-space">
+                <div class="comp img-space">
+                    <img class="comp-imgs" src="images/comparison/[original]sunrise_house.jpg" />
+                    <img id="my-img3" class="comp-imgs" src="images/comparison/[edit]sunrise_house.jpg" />
+                    <input type="range" min="0" max="100" value="50" id="slider3" oninput="slide3()">
+                </div>
+                <div class="comp img-space">
+                    <img class="comp-imgs" src="images/comparison/[original]sea_sky_Toroni2k16.jpg" />
+                    <img id="my-img4" class="comp-imgs" src="images/comparison/[edit1]sea_sky_Toroni2k16.jpg" />
+                    <input type="range" min="0" max="100" value="50" id="slider4" oninput="slide4()">
+                </div>
+            </section>
+
+
+            <div id="graphics"></div><br><br> <!-- anchor gia to redirect -->
+            <section class="container-portfolio border-box-portfolio graphics-box">
+                <div class="category1 categories img-space">
+                    <img id="logos-category" class="g-images" onclick="changeImgLogos(this), window.location.href='#graphics';" src="images/logos/aspire-logo.png">
+                    <h4 class="overlay-text-img">LOGOS</h4>
+                    <p id="img-alt" class="img-alt">Aspire Logo</p>
+                </div>
+                <div class="category2 categories img-space flip-card-front">
+                    <img id="business_cards-category" class="g-images bcard" src="images/other/[FRONT]Business_card_sample_2.jpg" onclick="changeImg(this)">
+                    <h4 class="overlay-text-img2">BUSINESS CARD 1</h4>
+                </div>
+
+                <div class="category2 categories img-space flip-card-front">
+                    <img id="business_cards-category" class="g-images bcard" src="images/other/[FRONT]Business_card_sample_1.jpg" onclick="changeImg2(this)">
+                    <h4 class="overlay-text-img2">BUSINESS CARD 2</h4>
+                </div>
+                
+            </section>
+
+            <div id="contact"></div><br><br><br><br><br><br> <!-- anchor gia to redirect -->
+            <section class="container-portfolio border-box-portfolio-mini contact-box">
+                <h3 class="titles2">Contact Form</h3>
+                <form class="cf">
+                    <label>Name: </label><br>
+                    <input type="text" class="cf-i" id="name" name="name" maxlength="67" placeholder="Your name.." />
+                    <br><br>
+                    <label>E-mail: </label><br>
+                    <input type="text" class="cf-i" id="email" name="email" maxlength="67" placeholder="Your e-mail.." />
+                    <br><br>
+                    <label>Message: </label><br>
+                    <textarea class="cf-i" id="message" name="message" placeholder="Your message here.."></textarea>
+
+                    <br><br>
+                    <input class="btn-cf-submit" type="submit" value="Submit" action="mailto:billi1976@hotmail.com" />
+                </form>
+            </section>
+
+            <br><br><br><br><br>
+
+            <footer class="footer">
+                <div class="copyright">
+                    <p>Coded and Designed by Biller.</p>
+                </div>
+                <div class="socials links">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/Biller13" target="_blank">Github</a>
+                    <br>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/vasilis-avramidis-0b50311b6/" target="_blank">Linked In</a>
+                    <br>
+                    <i class="fa-brands fa-instagram"></i>
+                    <a  href="https://www.instagram.com/vasilis_biller/" target="_blank">Instagram</a>
+                    <br>
+                    
+                </div>
+            </footer>
+
+            <!-- Optional JavaScript -->
+            <!-- <script src="js/page-redirect.js"></script> -->
+            <script src="js/comp.js"></script>
+            <script src="js/sidebar.js"></script>
+            <script src="js/img-change.js"></script>
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </body>
+    </html>

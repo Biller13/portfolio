@@ -24,23 +24,23 @@ function changeImg2(image) {
 
 function changeImgLogos(image) {
     if (z === 0) {
-        image.src = "./images/logos/aspire-logo.png";
+        image.src = "../images/logos/aspire-logo.png";
         document.getElementById("img-alt").textContent = "Aspire Logo";
         z++;
     } else if (z === 1) {
-        image.src = "./images/logos/triceratops-logo.png";
+        image.src = "../images/logos/triceratops-logo.png";
         document.getElementById("img-alt").textContent = "Triceratops Logo";
         z++;
     } else if (z === 2) {
-        image.src = "./images/logos/eagle-logo.png";
+        image.src = "../images/logos/eagle-logo.png";
         document.getElementById("img-alt").textContent = "Eagle Logo";
         z++;
     } else if (z === 3) {
-        image.src = "./images/logos/egypt-logo.png";
+        image.src = "../images/logos/egypt-logo.png";
         document.getElementById("img-alt").textContent = "Egypt Logo";
         z++;
     } else {
-        image.src = "./images/logos/viking-logo.png";
+        image.src = "../images/logos/viking-logo.png";
         document.getElementById("img-alt").textContent = "Viking Logo";
         z = 0;
     }

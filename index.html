@@ -54,7 +54,7 @@
                 <div class="text">
                     <h3>Greetings!</h3>
                     <p>
-                        My name is Vasilis, I am 26 years old from Greece. My passion is CSS. I like Front-End Developing and I am a self-taught Graphic Designer.
+                        My name is Vasilis, I am 27 years old from Greece. My passion is CSS. I like Front-End Developing and I am a self-taught Graphic Designer.
                     </p>
                     <p>Welcome to my Portfolio!</p>
                     <button type="button" class="read_more-btn" onClick="openSideBar(), window.location.href='#index';">Read More</button>
@@ -133,14 +133,24 @@
             </section>
             
             <div id="projects"></div><br><br> <!-- anchor gia to redirect -->
-            <section class="container-portfolio border-box-portfolio-mini projects-box">
+        <div class="container-portfolio">
+            <section class="border-box-portfolio-mini cfix">
                 <div id="redirectNewTab" class="pj" onclick="window.open('https://userstyles.org/styles/184330/dark-orange-by-biller', '_blank');">
                     <h2 class="titles2">Custom CSS theme</h2>
                     <img class="doby" src="images/DarkOrangebyBiller.png">
                     <p class="descriptions">This is a custom CSS theme for youtube, that you can use with the "Stylish" extension.</p>
                 </div>
-
             </section>
+
+            <section class="border-box-portfolio-mini">
+                <div id="redirectNewTab" class="pj" onclick="window.open('https://github.com/Biller13/website-template2', '_blank');">
+                    <h2 class="titles2">Website Template</h2>
+                    <img class="template2" src="images/template2_preview.jpg">
+                    <p class="descriptions">This is a pure Html and CSS website template.</p>
+                </div>
+            </section>
+
+        </div>
 
             <div id="photography"></div><br><br> <!-- anchor gia to redirect -->
             <section class="container-portfolio border-box-portfolio-low">
@@ -170,23 +180,74 @@
             </section>
 
 
-            <div id="graphics"></div><br><br> <!-- anchor gia to redirect -->
-            <section class="container-portfolio border-box-portfolio graphics-box">
-                <div class="category1 categories img-space">
-                    <img id="logos-category" class="g-images" onclick="changeImgLogos(this), window.location.href='#graphics';" src="images/logos/aspire-logo.png">
-                    <h4 class="overlay-text-img">LOGOS</h4>
-                    <p id="img-alt" class="img-alt">Aspire Logo</p>
+            <div id="graphics"></div><br><br><br><br> <!-- anchor gia to redirect -->
+            <section class="gallery">
+                <p class="gallery-heading">Gallery</p>
+                <div class="gallery-images">
+                    <div class="img-box">
+                        <img class="gallery-img-settings img1" src="images/logos/aspire-logo.png"/>
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Aspire Logo</p>
+                                <p class="opacity-low">Gaming Logo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="gallery-img-settings img2" src="images/logos/triceratops-logo.png"/>
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Triceratops Logo</p>
+                                <p class="opacity-low">Gaming Logo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="gallery-img-settings img3" src="images/logos/eagle-logo.png"/>
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Eagle Logo</p>
+                                <p class="opacity-low">Gaming Logo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="gallery-img-settings img4" src="images/logos/egypt-logo.png"/>
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Egypt Logo</p>
+                                <p class="opacity-low">Gaming Logo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="gallery-img-settings img5" src="images/logos/viking-logo.png"/>
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Viking Logo</p>
+                                <p class="opacity-low">Gaming Logo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="gallery-img-settings img6" src="images/other/[FRONT]Business_card_sample_1.jpg" onclick="changeImgCard1(this)"/>
+                        <div class="">
+                            <div class="caption">
+                                <p>Business Card</p>
+                                <p class="opacity-low">Sample 1 (click for back side)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="gallery-img-settings img6" src="images/other/[FRONT]Business_card_sample_2.jpg" onclick="changeImgCard2(this)"/>
+                        <div class="">
+                            <div class="caption">
+                                <p>Business Card</p>
+                                <p class="opacity-low">Sample 2 (click for back side)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="category2 categories img-space flip-card-front">
-                    <img id="business_cards-category" class="g-images bcard" src="images/other/[FRONT]Business_card_sample_2.jpg" onclick="changeImg(this)">
-                    <h4 class="overlay-text-img2">BUSINESS CARD 1</h4>
-                </div>
-
-                <div class="category2 categories img-space flip-card-front">
-                    <img id="business_cards-category" class="g-images bcard" src="images/other/[FRONT]Business_card_sample_1.jpg" onclick="changeImg2(this)">
-                    <h4 class="overlay-text-img2">BUSINESS CARD 2</h4>
-                </div>
-                
             </section>
 
             <div id="contact"></div><br><br><br><br><br><br> <!-- anchor gia to redirect -->

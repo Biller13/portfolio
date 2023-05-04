@@ -22,6 +22,26 @@ function changeImg2(image) {
     }
 }
 
+function changeImgCard1(image) {
+    if (x === 0) {
+        image.src = "images/other/[BACK]Business_card_sample_1.jpg";
+        x = 1;
+    } else {
+        image.src = "images/other/[FRONT]Business_card_sample_1.jpg";
+        x = 0;
+    }
+}
+
+function changeImgCard2(image) {
+    if (x === 0) {
+        image.src = "images/other/[BACK]Business_card_sample_2.jpg";
+        x = 1;
+    } else {
+        image.src = "images/other/[FRONT]Business_card_sample_2.jpg";
+        x = 0;
+    }
+}
+
 function changeImgLogos(image) {
     if (z === 0) {
         image.src = "images/logos/aspire-logo.png";

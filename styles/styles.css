@@ -1,3 +1,17 @@
+:root {
+    --main-color: #ff8100;
+    --darker-main-color: #7a3d00;
+    --soft-main-color: #ffb983;
+    --progress-bar: rgba(255, 125, 0, 0.50);
+    --dark-gray-bg: #323232;
+    --bg-selection: rgba(51, 51, 51, 0.455);
+    --darker-gray-bg: #1c1c1c;
+    --soft-white-gray-color: #aaa;
+    --just-white: white;
+    --just-black: black;
+    --danger: #ca0909;
+}
+
 html {
     scroll-behavior: smooth;
 
@@ -11,7 +25,7 @@ html {
 }
 
 body {
-    background-color: #323232 !important;
+    background-color: var(--dark-gray-bg) !important;
     font-family: "Roboto" !important;
 
     /* remove extra space at right (chrome) 
@@ -24,13 +38,13 @@ body {
 }
 
 *::selection {
-    color: rgb(255, 185, 131, 1);
-    background-color: rgba(51, 51, 51, 0.455);
+    color: var(--soft-main-color);
+    background-color: var(--bg-selection);
 }
 
 /* Navbar */
 .navbar {
-    background-color: #1c1c1c;
+    background-color: var(--darker-gray-bg);
     font-size: 25px;
     text-align: center;
     padding-right: 20px;
@@ -48,23 +62,23 @@ body {
 }
 
 a {
-    color: #ff8100 !important;
+    color: var(--main-color) !important;
     text-decoration: none;
     margin-left: auto;
     margin-right: 50px;
 }
 
 a:visited { 
-    color: #ff8100 !important;
+    color: var(--main-color) !important;
 }
 
 a:hover {
-    color: white !important;
+    color: var(--just-white) !important;
     text-decoration: none !important;
 }
 
 .navmenu:hover {
-    color: white !important;
+    color: var(--just-white) !important;
 }
 
 .nav-list {
@@ -83,7 +97,7 @@ a:hover {
 
 /* Navbar glass effect */
 .glass-effect {
-    background-color: #1c1c1c !important;
+    background-color: var(--darker-gray-bg) !important;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
@@ -109,7 +123,7 @@ a:hover {
     background: linear-gradient(180deg, rgba(47, 0, 0, 0.671), rgba(226, 0, 0, 0.671));
     font-size: 18px;
     text-align: center;
-    color: white;
+    color: var(--just-white);
 }
 
 /* About Section */
@@ -130,7 +144,7 @@ a:hover {
     margin: 100px;
     padding: 20px;
     position: relative;
-    border-bottom: 3px solid #ff8100;
+    border-bottom: 3px solid var(--main-color);
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
     animation: animate 4s linear infinite;
 }
@@ -167,14 +181,14 @@ a:hover {
 }
 
 .bd {
-    border: 3px solid #ff8100;
+    border: 3px solid var(--main-color);
     border-radius: 50px;
 }
 
 /* Profile description */
 .text {
     font-size: 16px;
-    color: #ff8100;
+    color: var(--main-color);
     text-align: left;
     margin-right: 10%;
     margin-left: -60%;
@@ -184,18 +198,18 @@ a:hover {
     width: 20%;
     margin-left: 78%;
     padding: 10px;
-    border: 1px solid #ff8100;
+    border: 1px solid var(--main-color);
     text-align: center;
     background-color: transparent;
-    color: #ff8100;
+    color: var(--main-color);
     cursor: pointer;
     outline: none;
 }
 
 .read_more-btn:hover {
     background: linear-gradient(rgba(50, 50, 50, 0.3), rgba(0, 0, 0, 0.5));
-    color: white;
-    border: 1px solid white;
+    color: var(--just-white);
+    border: 1px solid var(--just-white);
 }
 
 /* ABOUT (RIGHT) SIDEBAR */
@@ -208,25 +222,25 @@ a:hover {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #323232;
+    background-color: var(--dark-gray-bg);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.25);
-    border-left: 0px solid #ff8100;
+    border-left: 0px solid var(--main-color);
 }
 
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #ff8100;
+    color: var(--main-color);
     display: block;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    color: white;
+    color: var(--just-white);
 }
 
 .sidebar .close-read_more-btn {
@@ -244,14 +258,14 @@ a:hover {
     margin: 50px;
     padding: 20px;
     position: relative;
-    background-color: #1c1c1c;
+    background-color: var(--darker-gray-bg);
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.50);
     overflow: hidden;
 }
 
 .cv-text {
     font-size: 17px;
-    color: #ff8100;
+    color: var(--main-color);
     text-align: left;
 }
 
@@ -293,43 +307,43 @@ a:hover {
 /* progress bars */
 .progress-bar {
     width: 100%;
-    background-color: white !important;
-    border: 2px solid #ff8100;
+    background-color: var(--just-white) !important;
+    border: 2px solid var(--main-color);
 }
 
 .htmlbar {
     width: 90%;
-    background-color: rgba(255, 125, 0, 0.50) !important;
+    background-color: var(--progress-bar) !important;
 }
 
 .cssbar {
     width: 75%;
-    background-color: rgba(255, 125, 0, 0.50) !important;
+    background-color: var(--progress-bar) !important;
 }
 
 .jsbar {
     width: 30%;
-    background-color: rgba(255, 125, 0, 0.50) !important;
+    background-color: var(--progress-bar) !important;
 }
 
 .psbar {
     width: 80%;
-    background-color: rgba(255, 125, 0, 0.50) !important;
+    background-color: var(--progress-bar) !important;
 }
 
 .vpbar {
     width: 70%;
-    background-color: rgba(255, 125, 0, 0.50) !important;
+    background-color: var(--progress-bar) !important;
 }
 
 .prebar {
     width: 60%;
-    background-color: rgba(255, 125, 0, 0.50) !important;
+    background-color: var(--progress-bar) !important;
 }
 
 .aebar {
     width: 40%;
-    background-color: rgba(255, 125, 0, 0.50) !important;
+    background-color: var(--progress-bar) !important;
 }
 
 /* Portfolio Section */
@@ -351,7 +365,7 @@ a:hover {
     margin: 100px;
     padding: 20px;
     position: relative;
-    border-bottom: 3px solid #ff8100;
+    border-bottom: 3px solid var(--main-color);
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
     animation: animate 4s linear infinite;
 }
@@ -374,7 +388,7 @@ a:hover {
     margin: 100px;
     padding: 20px;
     position: relative;
-    border-bottom: 3px solid #ff8100;
+    border-bottom: 3px solid var(--main-color);
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
     animation: animate 4s linear infinite;
 }
@@ -386,38 +400,42 @@ a:hover {
     display: block;
     margin-left: 10%;
     position: relative;
-    border: 1px solid #ff8100;
-    background-color: #323232;
+    border: 1px solid var(--main-color);
+    background-color: var(--dark-gray-bg);
 }
 
 .titles {
-    color: #ff8100;
+    color: var(--main-color);
     text-align: center;
-    border-bottom: 1px solid #ff8100;
+    border-bottom: 1px solid var(--main-color);
 }
 
 .descriptions {
     font-size: 16px;
-    color: #ff8100;
+    color: var(--main-color);
     text-align: center;
 }
 
 .btn {
-    color: #ff8100 !important;
+    color: var(--main-color) !important;
     display: block;
     margin: 0 auto;
     margin-top: 70%;
-    border: 1px solid #ff8100 !important;
+    border: 2px solid var(--main-color) !important;
 }
 
 .btn:hover {
-    border: 1px solid white !important;
-    color: white !important;
+    border: 2px solid var(--just-white) !important;
+    color: var(--just-white) !important;
     background: linear-gradient(rgba(50, 50, 50, 0.3), rgba(0, 0, 0, 0.5));
 }
 
 .btn:focus {
     box-shadow: 0 0 0 0 rgba(255, 125, 0, 0) !important;
+}
+
+.btn2 {
+    margin-top: 60% !important;
 }
 
 /* Projects section*/
@@ -439,7 +457,7 @@ a:hover {
 }
 
 .titles2 {
-    color: #ff8100;
+    color: var(--main-color);
     text-align: center;
     text-decoration: underline;
 }
@@ -452,8 +470,15 @@ a:hover {
     width: 100%;
 }
 
-
 /* Photography section */
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: var(--just-white);
+}
 
 /* Comp Images */
 .comp {
@@ -532,7 +557,7 @@ a:hover {
     height: 15px;
     width: 15px;
     background: rgba(255, 129, 0, 1);
-    border: 3px solid #ff8100;
+    border: 3px solid var(--main-color);
     border-radius: 50%;
     background-size: contain;
     cursor: pointer;
@@ -541,7 +566,7 @@ a:hover {
 /* text style */
 .text_secondary {
     font-size: 16px;
-    color: #ff8100;
+    color: var(--main-color);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -553,7 +578,7 @@ a:hover {
     font-size: 2.0em;
     letter-spacing: 1px;
     padding: 40px;
-    color: white;
+    color: var(--just-white);
 }
 
 .gallery-images {
@@ -576,9 +601,9 @@ a:hover {
     width: 300px;
     overflow: hidden;
     display: inline-block;
-    color: white;
+    color: var(--just-white);
     position: relative;
-    background-color: #1c1c1c;
+    background-color: var(--darker-gray-bg);
     padding-top: 50px;
   }
 
@@ -647,14 +672,14 @@ a:hover {
 }
 
 .g-images:hover {
-    border: 2px solid #ff8100;
+    border: 2px solid var(--main-color);
     filter: brightness(100%);
     transition: .3s ease-in;
 }
 
 .overlay-text-img {
     position: absolute;
-    color: #ff8100;
+    color: var(--main-color);
     top: 80%;
     width: 30%;
     /*
@@ -666,7 +691,7 @@ a:hover {
 
 .overlay-text-img2 {
     position: absolute;
-    color: #ff8100;
+    color: var(--main-color);
     top: 65%;
     width: 30%;
     opacity: 0;
@@ -688,7 +713,7 @@ a:hover {
 }
 
 .img-alt {
-    color: #ff8100 !important;
+    color: var(--main-color) !important;
     margin-top: -20px;
 }
 
@@ -701,21 +726,21 @@ a:hover {
 }
 
 .cf {
-    color: #ff8100;
+    color: var(--main-color);
 }
 
 .cf-i {
-    background-color: #1c1c1c;
-    color: #ff8100;
+    background-color: var(--darker-gray-bg);
+    color: var(--main-color);
     border: 0px;
     width: 100%;
     resize: none;
-    caret-color: white;
+    caret-color: var(--just-white);
 }
 
 .cf-i:focus {
     outline: none;
-    border: 1px solid #ff8100;
+    border: 1px solid var(--main-color);
 }
 
 #message {
@@ -723,22 +748,22 @@ a:hover {
 }
 
 .btn-cf-submit {
-    color: #ff8100;
-    background-color: #1c1c1c;
-    border: 1px solid #ff8100;
+    color: var(--main-color);
+    background-color: var(--darker-gray-bg);
+    border: 1px solid var(--main-color);
     width: 20%;
     
 }
 
 .btn-cf-submit:hover {
-    color: white;
-    border: 1px solid white;
+    color: var(--just-white);
+    border: 1px solid var(--just-white);
     background: linear-gradient(rgba(50, 50, 50, 0.3), rgba(0, 0, 0, 0.5));
 }
 
 /* Footer */
 .footer {
-    background-color: #1c1c1c;
+    background-color: var(--darker-gray-bg);
     position: relative;
     left: 0;
     bottom: 0;
@@ -784,7 +809,7 @@ a:hover {
 
 /* Icons */
 .icons {
-    color: #ff8100;
+    color: var(--main-color);
     margin-left: auto;
     margin-right: auto;
     padding-right: 0px !important;
